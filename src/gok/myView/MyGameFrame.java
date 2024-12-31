@@ -2,6 +2,7 @@ package gok.myView;
 
 import gok.action.MyListener;
 import gok.frame.FirstPageFrame;
+import gok.frame.PauseFrame;
 import gok.model.BackGround;
 import gok.model.Hero;
 import gok.model.Person;
@@ -66,12 +67,15 @@ public class MyGameFrame extends JFrame implements KeyListener {
             hero.attack();
 
         }
+
         //暂停与继续功能
         if (code==89){//按y键
             System.out.println("继续");
 //            frame.MyFrame.ifwait=true;//线程继续
 //            TestApp.mygame.setVisible(true);//打开游戏窗体
             this.setVisible(false);//隐藏当前窗体
+            new PauseFrame();
+            
         }
         if (code==78){//按n键
             System.out.println("退出");

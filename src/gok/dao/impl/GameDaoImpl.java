@@ -34,6 +34,13 @@ public class GameDaoImpl implements GameDao {
     }
 
     @Override
+    public int deleteGame(List list,Game game) throws Exception {
+
+        int a = JDBCUtil.delAll(list,game);
+        return a;
+    }
+
+    @Override
     public int addUser(Game game) throws Exception {
         int a = JDBCUtil.addAll(game);
         return a;

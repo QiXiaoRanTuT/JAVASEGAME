@@ -10,5 +10,6 @@ public interface GameDao {
     int addUser(Game game) throws Exception;
     int updateGame(Game game) throws Exception;
     List<Game> getGame(Game game) throws Exception;
+    int deleteGame(List list,Game game) throws Exception;
 }
 

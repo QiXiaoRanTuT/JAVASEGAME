@@ -28,4 +28,10 @@ public class UserDaoImpl implements UserDao {
         int a = JDBCUtil.addAll(user);
         return a;
     }
+
+    @Override
+    public int deleteUser(List userId,User user) throws Exception {
+        int a = JDBCUtil.delAll(userId,user);
+        return a;
+    }
 }

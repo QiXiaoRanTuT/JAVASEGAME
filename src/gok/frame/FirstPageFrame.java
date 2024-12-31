@@ -17,10 +17,10 @@ import java.awt.event.KeyListener;
  * button_1   注册按钮
  * button_2   排行榜按钮
  */
-public class FirstPageFrame extends MyFrame{
+public class FirstPageFrame extends MyFrame {
     private JPanel contentPane;
 
-    public FirstPageFrame(){
+    public FirstPageFrame() {
         super();
 
         this.setTitle("首页");

@@ -59,7 +59,7 @@ public class RegisterFrame extends MyFrame {
                         Game game = new Game();
                         game.setUsername(register_username.getText());
                         game.setId(userDao.getUserAll(user).get(0).getUserid());
-
+                        game.setScore(0);//防止空值报错
                         GameDaoImpl gameDao = new GameDaoImpl();
                         int gameStatus = gameDao.addUser(game);
                         if (gameStatus == 1){

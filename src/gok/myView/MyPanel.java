@@ -78,7 +78,7 @@ public class MyPanel extends JPanel implements Runnable {
         }
 
         //当用户数据大于旧数据时更新数据,避免数据库访问量过大
-        if (LoginFrame. zsScore <= MyGameFrame.hero.getScore() ){
+        if (LoginFrame. zsScore < MyGameFrame.hero.getScore() ){
             Game game = new Game();
 //            game.setId(LoginFrame.userid);
             game.setScore(MyGameFrame.hero.getScore());

@@ -2,6 +2,7 @@ package gok.frame;
 
 
 
+import gok.myView.MyGameFrame;
 import gok.util.StaticValue;
 
 import javax.swing.*;
@@ -40,6 +41,7 @@ public class PauseFrame extends MyFrame implements KeyListener {
 //            frame.MyFrame.ifwait=true;//线程继续
 //            TestApp.mygame.setVisible(true);//打开游戏窗体
             this.setVisible(false);//隐藏当前窗体
+            new MyGameFrame();
         }
         if (keyCode==78){//按n键
             System.out.println("退出");
